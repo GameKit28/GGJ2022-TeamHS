@@ -23,16 +23,31 @@ Shader "Duality/DualColorOutline" {
     CGPROGRAM
         //basic surface shader
         #pragma surface surf Standard fullforwardshadows
-        
+
+        struct appdata
+            {
+                float4 vertex : POSITION;
+                float2 uv : TEXCOORD0;
+                float3 normal : NORMAL; //normal object space
+            };
+
         sampler2D _MainTex;
 
         struct Input
         {
             float2 uv_MainTex;
             float4 color : COLOR;
+            half3 worldNormal : NORMAL; //adding world normals so we can... use world normals...
         };
  
         half4 _Color;
+
+        float CellShade(float3 normal, float3 lightDir)
+        {
+            float NdotL = max(0.0, dot(normalize(normal), normalize(lightDir)));
+
+            return floor(NdotL / 0.3); //dropping output to below 0 so it fragments shadows into solid parts
+        }
  
         void surf(Input IN, inout SurfaceOutputStandard o)
         {
@@ -42,6 +57,24 @@ Shader "Duality/DualColorOutline" {
             o.Metallic = 0;
             o.Alpha = _Color.a * IN.color.a;
         }
+
+        v2f vert(appdata v)
+        {
+            v2f o;
+            o.vertex = UnityObjectToClipPos(v.vertex);
+            o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+            o.worldNormal = UnityObjectToWorldNormal(v.normal); //takes object normal and converts it to world space
+            return o;
+        }
+
+        fixed4 frag(v2f i) : SV_Target
+        {
+            // sample the texture
+            fixed4 col = tex2D(_MainTex, i.uv);
+            col *= CellShade(i.worldNormal, _WorldSpaceLightPos0.xyz); //takes the color of our texture and multiplies it by the function i made earlier
+            return col;
+        }
+
     ENDCG
 
         //outline pass, sorry mom
@@ -70,6 +103,8 @@ Shader "Duality/DualColorOutline" {
                     float4 pos : SV_POSITION;
                     SHADOW_COORDS(1) //add lighting data to texcoords
                 };
+
+                
         
                 sampler2D _OutlineTex;
                 float4 _OutlineTex_ST;
