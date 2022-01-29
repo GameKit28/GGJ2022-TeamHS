@@ -7,6 +7,7 @@ Shader "Duality/DualColorOutline" {
         [MainColor]
         _Color("Color", Color) = (1, 1, 1, 1)
         
+        _OutlineThreshold("Outline Threshole", Range(0.01,0.99)) = 0.5
         _OutlineWidth("Outline Width", Range(0, 20)) = 2.0
         _OutlineIntens("Outline Texture Intensity", Range(0, 1)) = 1
         _OutlineTex("Outline Overlay Texture", 2D) = "black" {}
@@ -74,6 +75,7 @@ Shader "Duality/DualColorOutline" {
                 float4 _OutlineTex_ST;
                 half _OutlineWidth;
                 fixed _OutlineIntens;
+                float _OutlineThreshold;
 
                 v2f vert(meshdata v)
                 {
@@ -96,9 +98,11 @@ Shader "Duality/DualColorOutline" {
  
                 fixed4 frag(v2f i) : SV_TARGET
                 {
-                    fixed shadow = SHADOW_ATTENUATION(i);
+                    fixed shadow = SHADOW_ATTENUATION(i); //this gives us the shadowing
+                    fixed4 stepShade = fixed4(step(shadow, _OutlineThreshold), step(shadow, _OutlineThreshold), step(shadow, _OutlineThreshold), 1.0); //this is applying the shadow data to a vector4, clamped at the value of the threshold
 
-                    return fixed4(step(shadow, 0.5), step(shadow, 0.5), step(shadow, 0.5), 1.0);
+                    return stepShade;
+                    //return fixed4(step(shadow, _OutlineThreshold), step(shadow, _OutlineThreshold), step(shadow, _OutlineThreshold), 1.0);
                 }
  
         ENDCG
