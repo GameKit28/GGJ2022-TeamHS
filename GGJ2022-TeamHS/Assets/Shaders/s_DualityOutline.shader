@@ -8,7 +8,7 @@ Shader "Duality/DualColorOutline" {
         _Color("Color", Color) = (1, 1, 1, 1)
         
         _OutlineWidth("Outline Width", Range(0, 20)) = 2.0
-        _OutlineIntens("Outline Texture Intensity", Range(0,1)) = 1.0;
+        _OutlineIntens("Outline Texture Intensity", Range(0, 1)) = 1
         _OutlineTex("Outline Overlay Texture", 2D) = "black" {}
     }
  
