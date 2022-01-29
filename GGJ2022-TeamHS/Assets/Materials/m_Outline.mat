@@ -73,7 +73,7 @@ Material:
     - _OcclusionStrength: 1
     - _OutlineIntens: 1
     - _OutlineThreshold: 0.5
-    - _OutlineWidth: 10.89
+    - _OutlineWidth: 10
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
