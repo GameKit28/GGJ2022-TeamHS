@@ -51,6 +51,7 @@ MonoBehaviour:
   - {fileID: 0}
   followCam: {fileID: 0}
   mapCam: {fileID: 0}
+  endLevelCam: {fileID: 5572872230215168393}
   startText: {fileID: 0}
   winStatePanel: {fileID: 0}
   bestTimeText: {fileID: 0}
@@ -135,7 +136,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6191665619031234110, guid: 9dbc22a30eea9b04b9d011360acebc66, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9dbc22a30eea9b04b9d011360acebc66, type: 3}
 --- !u!4 &4340233556165154166 stripped
 Transform:
@@ -143,3 +145,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6910301296485619354}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5572872230215168393 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1346721075948381971, guid: 9dbc22a30eea9b04b9d011360acebc66,
+    type: 3}
+  m_PrefabInstance: {fileID: 6910301296485619354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
