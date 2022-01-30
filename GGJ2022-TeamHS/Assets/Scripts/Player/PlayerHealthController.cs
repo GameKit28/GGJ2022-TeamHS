@@ -23,7 +23,7 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
     private int numberInSun = 0;
     private float timeInSun = 0;
 
-    private bool immortal = false;
+    public bool immortal = false;
 
     void Start()
     {
