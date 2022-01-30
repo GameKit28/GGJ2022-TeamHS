@@ -61,11 +61,14 @@ public class Enemy : MonoBehaviour
             idleEnemy.SetActive(false);
             huntingEnemy.SetActive(true);
             StopAllCoroutines();
-            agent.SetDestination(player.position);
-
             SetAudioPitch();
             if(!audioSource.isPlaying)
                 audioSource.Play();
+        }
+
+        if (chasingPlayer)
+        {
+            agent.SetDestination(player.position);
         }
 
         if (player != null)
