@@ -30,10 +30,11 @@ public class LevelController : MonoBehaviour
     public void Start()
     {
         levelCompletionTime = 0;
-        toggleAction = player.GetComponent<PlayerInput>().actions["ToggleCamera"];
+        var input = player.GetComponent<PlayerInput>();
+        toggleAction = input.actions["ToggleCamera"];
         toggleAction.performed += ToggleCamera;
         var displayString = toggleAction.GetBindingDisplayString();
-        startText.text = $"Press {displayString} to Start!";
+        startText.text = $"Press Space or Y/Triangle to Start!";
     }
 
     private void OnDestroy()
@@ -81,7 +82,7 @@ public class LevelController : MonoBehaviour
             endOfLevel = true;
             mapCam.enabled = true;
             fireworks.SetActive(true);
-            startText.text = $"Press {toggleAction.GetBindingDisplayString()} to Continue!";
+            startText.text = $"Press Space or Y/Triangle to Continue!";
             bestTimeText.text = $"{Mathf.RoundToInt(levelCompletionTime)} Seconds";
             winStatePanel.SetActive(true);
             DOTween.Sequence()
