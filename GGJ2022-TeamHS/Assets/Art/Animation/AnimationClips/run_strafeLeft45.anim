@@ -72,7 +72,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -97,7 +97,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -122,7 +122,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -201,7 +201,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -271,7 +271,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -341,7 +341,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -366,7 +366,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -391,7 +391,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint/noseTip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint/noseTip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -524,7 +524,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -549,7 +549,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint/l_earTip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint/l_earTip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -682,7 +682,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -707,7 +707,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint/r_earTip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint/r_earTip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -858,7 +858,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1054,7 +1054,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1259,7 +1259,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1446,7 +1446,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1471,7 +1471,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint/r_frontToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint/r_frontToe_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1604,7 +1604,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1764,7 +1764,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1924,7 +1924,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2093,7 +2093,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2118,7 +2118,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint/l_frontToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint/l_frontToe_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2206,7 +2206,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2285,7 +2285,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2373,7 +2373,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2479,7 +2479,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2594,7 +2594,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2700,7 +2700,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2815,7 +2815,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2840,7 +2840,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint/tailEnd_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint/tailEnd_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3000,7 +3000,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3160,7 +3160,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3347,7 +3347,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3426,7 +3426,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3451,7 +3451,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint/l_backToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint/l_backToe_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3611,7 +3611,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3789,7 +3789,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3958,7 +3958,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4037,7 +4037,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4062,7 +4062,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint/r_backToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint/r_backToe_joint
   m_CompressedRotationCurves: []
   m_EulerCurves: []
   m_PositionCurves:
@@ -4126,7 +4126,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4151,7 +4151,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4176,7 +4176,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4273,7 +4273,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4433,7 +4433,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4566,7 +4566,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4591,7 +4591,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4616,7 +4616,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint/noseTip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/noseBase_joint/noseTip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4677,7 +4677,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4702,7 +4702,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint/l_earTip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/l_earBase_joint/l_earTip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4763,7 +4763,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4788,7 +4788,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint/r_earTip_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/neck_joint/head_joint/r_earBase_joint/r_earTip_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5119,7 +5119,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5144,7 +5144,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5169,7 +5169,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5194,7 +5194,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5219,7 +5219,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint/r_frontToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/r_frontClavicle_joint/r_frontShoulder_joint/r_frontElbow_joint/r_frontFoot_joint/r_frontToe_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5631,7 +5631,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5656,7 +5656,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5681,7 +5681,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5706,7 +5706,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5731,7 +5731,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint/l_frontToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/spine1_joint/spine2_joint/chest_joint/l_frontClavicle_joint/l_frontShoulder_joint/l_frontElbow_joint/l_frontFoot_joint/l_frontToe_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6260,7 +6260,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6285,7 +6285,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6310,7 +6310,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6335,7 +6335,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6360,7 +6360,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6385,7 +6385,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6410,7 +6410,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6435,7 +6435,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint/tailEnd_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint/tailEnd_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6460,7 +6460,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6485,7 +6485,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6510,7 +6510,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6535,7 +6535,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6560,7 +6560,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint/l_backToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/l_backFlank_joint/l_backKnee_joint/l_backHind_joint/l_backFoot_joint/l_backToe_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6585,7 +6585,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6610,7 +6610,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6635,7 +6635,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6660,7 +6660,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6685,7 +6685,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint/r_backToe_joint
+    path: Hero/scale_loc/rig_grp/hip_joint/r_backFlank_joint/r_backKnee_joint/r_backHind_joint/r_backFoot_joint/r_backToe_joint
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
