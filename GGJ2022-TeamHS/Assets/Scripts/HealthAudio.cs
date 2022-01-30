@@ -5,14 +5,22 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class HealthAudio : MonoBehaviour, IHealthEventReceiver
 {
+    AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = 0f;
+    }
+
     void IHealthEventReceiver.OnPlayerDamageEnd()
     {
-        GetComponent<AudioSource>().volume = 0f;
+        audioSource.volume = 0f;
     }
 
     void IHealthEventReceiver.OnPlayerDamageStart()
     {
-        GetComponent<AudioSource>().volume = 1f;
+        audioSource.volume = 1f;
     }
 
     void IHealthEventReceiver.PlayerDefeated()
