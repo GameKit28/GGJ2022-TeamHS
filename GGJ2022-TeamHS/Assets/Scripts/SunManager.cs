@@ -5,7 +5,8 @@ using UnityEngine;
 public class SunManager : MonoBehaviour
 {
     private static SunManager instance = null;
-    private int ShadowLayerMask = 10;
+    private const int ShadowLayerMask = 1 << 10;
+    private const float RayDistance = 50f;
 
     List<Sun> activeSuns = new List<Sun>();
 
@@ -29,7 +30,7 @@ public class SunManager : MonoBehaviour
         foreach (Sun sun in instance.activeSuns)
         {
             ray = new Ray(point, -sun.GetShadowVector());
-            if (Physics.Raycast(ray, out raycastHit, instance.ShadowLayerMask))
+            if (Physics.Raycast(ray, out raycastHit, RayDistance, ShadowLayerMask))
             {
                 Debug.DrawRay(ray.origin, ray.direction, Color.blue);
             }
@@ -53,7 +54,7 @@ public class SunManager : MonoBehaviour
         foreach(Sun sun in instance.activeSuns)
         {
             ray = new Ray(point, -sun.GetShadowVector());
-            if (Physics.Raycast(ray, out raycastHit, instance.ShadowLayerMask))
+            if (Physics.Raycast(ray, out raycastHit, RayDistance, ShadowLayerMask))
             {
                 Debug.DrawRay(ray.origin, ray.direction, Color.blue);
             }
