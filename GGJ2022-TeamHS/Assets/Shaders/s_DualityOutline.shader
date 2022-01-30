@@ -6,8 +6,9 @@ Shader "Duality/DualColorOutline" {
         _MainTex("Texture", 2D) = "white" {}
         [MainColor]
         _Color("Color", Color) = (1, 1, 1, 1)
+        [MainBump]
+        _BumpMap("Normal Map", 2D) = "bump" {}
 
-        _RampTex("Cel Shade Ramp", 2D) = "white" {}
         _CelCutoff("Max Distance", Float) = 5.0
         _OutlineThreshold("Outline Threshole", Range(0.01,0.99)) = 0.5
         _OutlineWidth("Outline Width", Range(0, 20)) = 2.0
@@ -47,7 +48,9 @@ Shader "Duality/DualColorOutline" {
             };
 
             sampler2D _MainTex;
+            sampler2D _BumpMap;
             float4 _MainTex_ST;
+
 
             float CellShade(float3 normal, float3 lightDir)
             {
@@ -61,7 +64,9 @@ Shader "Duality/DualColorOutline" {
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-                o.worldNormal = UnityObjectToWorldNormal(v.normal); //takes object normal and converts it to world space
+                o.worldNormal = UnpackNormal(tex2Dlod(_BumpMap, float4(v.uv, 1, 0))); //takes object normal and converts it to world space
+                o.worldNormal -= float3(0, 0, 0.5);
+                o.worldNormal = o.worldNormal + (UnityObjectToWorldNormal(v.normal));
                 return o;
             }
 

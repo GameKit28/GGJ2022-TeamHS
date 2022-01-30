@@ -7,6 +7,8 @@ public partial class PlayerStateController : MeFsm, IHealthEventReceiver
 {
     public RespawnPoint respawnPoint;
 
+    private const string SafetyZoneTag = "SafetyZone";
+
     void IHealthEventReceiver.OnPlayerDamageEnd()
     {
         //throw new System.NotImplementedException();
