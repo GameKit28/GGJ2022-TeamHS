@@ -65,6 +65,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Brightness: 0.084
     - _BumpScale: 1
     - _CelCutoff: 5
     - _Cutoff: 0.5

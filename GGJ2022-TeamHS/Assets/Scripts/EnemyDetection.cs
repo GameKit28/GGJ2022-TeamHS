@@ -52,7 +52,7 @@ public class EnemyDetection : MonoBehaviour
     private bool inVisionCone;
     #endregion
 
-    public Transform PlayerTransform => playerTransform ?? GameObject.FindGameObjectWithTag("Player").transform;
+    public Transform PlayerTransform => playerTransform ?? FindObjectOfType<PlayerMovementController>().transform;
 
     public bool InVisionCone
     {
