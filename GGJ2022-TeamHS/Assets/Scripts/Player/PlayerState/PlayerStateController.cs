@@ -5,7 +5,7 @@ using MeEngine.FsmManagement;
 
 public partial class PlayerStateController : MeFsm, IHealthEventReceiver
 {
-    public Transform respawnLocation;
+    public RespawnPoint respawnPoint;
 
     void IHealthEventReceiver.OnPlayerDamageEnd()
     {
