@@ -11,9 +11,15 @@ public partial class PlayerStateController : MeFsm
         {
             GetComponent<PlayerMovementController>().enabled = true;
             GetComponent<PlayerHealthController>().SetImmortal(true);
+            ParentFsm.respawnPoint.EnableSafetyZone(true);
 
             this.transform.position = ParentFsm.respawnPoint.transform.position;
             ParentFsm.respawnPoint.PlayRespawn();
+        }
+
+        protected override void ExitState()
+        {
+            ParentFsm.respawnPoint.EnableSafetyZone(false);
         }
 
         void OnTriggerExit(Collider other)
