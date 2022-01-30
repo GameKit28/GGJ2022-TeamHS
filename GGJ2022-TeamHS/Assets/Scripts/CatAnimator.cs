@@ -29,9 +29,9 @@ public class CatAnimator : MonoBehaviour
         
         bool is_moving = velocity.magnitude > motion_threshold_speed;
         if (is_moving)
-            anim.SetBool("move", true);
+            anim.SetBool("Move", true);
         else    
-            anim.SetBool("move", false);        
+            anim.SetBool("Move", false);        
 
         anim.SetFloat("VelX", velocity.x);
         anim.SetFloat("VelY", velocity.y);        
@@ -39,4 +39,5 @@ public class CatAnimator : MonoBehaviour
         
         // Debug.Log(string.Format("Set animation coeff moving: {2} x:{0}, y:{1}", velocity.x, velocity.y, is_moving));
     }
+
 }
