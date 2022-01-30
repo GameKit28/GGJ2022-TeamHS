@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: d04cf0efbdd07804a907e9ebfd94da5a
+guid: ce949fa660d118347a8959ea7363e283
 ModelImporter:
   serializedVersion: 21202
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: run_lateralLeft
   externalObjects: {}
   materials:
-    materialImportMode: 2
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -13,7 +16,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
@@ -29,16 +32,38 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths:
-    - scale_loc/rig_grp/hip_joint/tailBase_joint
-    - scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint
-    - scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint
-    - scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint
-    - scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint
-    - scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint
-    - scale_loc/rig_grp/hip_joint/tailBase_joint/tail1_joint/tail2_joint/tail3_joint/tail4_joint/tail5_joint/tail6_joint
+    extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: run_lateralLeft
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 301
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 301
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -96,7 +121,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: Hero
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -104,7 +129,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
