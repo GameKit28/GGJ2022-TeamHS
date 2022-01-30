@@ -13,7 +13,7 @@ public class PlayerMovementController : MonoBehaviour
     public CinemachineVirtualCamera mapCam;
 
     private Vector3 movementPlaneScalar = new Vector3(1, 0, 1); //Up is the Y Axis. Camera moves along the X,Z plane
-    private Vector2 inputVector = Vector2.zero;
+    public Vector2 inputVector {private set;  get;} = Vector2.zero;
     private Rigidbody body;
 
     // Start is called before the first frame update
