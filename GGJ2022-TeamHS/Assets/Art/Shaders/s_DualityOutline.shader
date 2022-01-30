@@ -15,6 +15,9 @@ Shader "Duality/DualColorOutline" {
         _OutlineWidth("Outline Width", Range(0, 20)) = 2.0
         _OutlineIntens("Outline Texture Intensity", Range(0, 1)) = 1
         _OutlineTex("Outline Overlay Texture", 2D) = "black" {}
+
+        _DissolveTexture("Dissolve Texutre", 2D) = "white" {}
+        _Amount("Amount", Range(0,1)) = 0
     }
 
     Subshader
@@ -218,42 +221,61 @@ Shader "Duality/DualColorOutline" {
                 Cull Off //Fast way to turn your material double-sided
 
                 CGPROGRAM
-                    #pragma surface surf Standard fullforwardshadows
-
+// Upgrade NOTE: excluded shader from DX11; has structs without semantics (struct v2f members uv_MainTex)
+#pragma exclude_renderers d3d11
+                    #pragma vertex vert
+                    #pragma fragment frag
                     #pragma target 3.0
 
                     sampler2D _MainTex;
 
-                    struct Input
+                    struct meshdata
                     {
                         float2 uv_MainTex;
+                        float2 uv : TEXCOORD0;
+                        float4 vertex : POSITION;
                     };
 
                     half _Glossiness;
                     half _Metallic;
                     fixed4 _Color;
 
+                    struct v2f 
+                    {
+                        float4 vertex : POSITION;
+                        float2 uv : TEXCOORD0;
+                        float2 uv_MainTex;
+                    };
+
                     //Dissolve properties
                     sampler2D _DissolveTexture;
                     half _Amount;
 
-                    void surf(Input IN, inout SurfaceOutputStandard o)
+                    v2f vert(meshdata v) 
                     {
+                        v2f o;
+
+                        o.vertex = UnityObjectToClipPos(v.vertex);
+                        o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                        
+                        return o;
+                    }
+
+                    fixed4 frag(v2f i) : SV_Target
+                    {
+                        
                         //Dissolve function
-                        half dissolve_value = tex2D(_DissolveTexture, IN.uv_MainTex).r;
-                        clip(dissolve_value - _Amount);
+                        half dissolve_value = tex2D(_DissolveTexture, i.uv_MainTex).r;
+                        fixed3 clipper = clamp(dissolve_value - _Amount);
 
                         //Basic shader function
-                        fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Color;
+                        fixed4 c = tex2D(_MainTex, i.uv_MainTex) * _Color;
 
-                        o.Albedo = c.rgb;a
-                        o.Metallic = _Metallic;
-                        o.Smoothness = _Glossiness;
-                        o.Alpha = c.a;
+                        return clipper;
                     }
                 ENDCG
             }
-        FallBack "Diffuse"
+                UsePass "Legacy Shaders/VertexLit/SHADOWCASTER"
     }
 
 }
