@@ -29,13 +29,17 @@ public class SunManager : MonoBehaviour
         foreach (Sun sun in instance.activeSuns)
         {
             ray = new Ray(point, -sun.GetShadowVector());
-            if (Physics.Raycast(ray, out raycastHit, instance.ShadowLayerMask))
+            //Physics.Raycast()            
+            float raycast_len = 20f;
+            var sunblock_layer = LayerMask.GetMask("SunBlocking");
+            if (Physics.Raycast(ray, out raycastHit, raycast_len, sunblock_layer))
             {
-                Debug.DrawRay(ray.origin, ray.direction, Color.blue);
+                Debug.DrawRay(ray.origin, ray.direction * raycast_len, Color.blue, 0.2f);
             }
             else
             {
-                Debug.DrawRay(ray.origin, ray.direction, Color.red);
+                Debug.DrawRay(ray.origin, ray.direction * raycast_len, Color.red, 0.2f);
+                Debug.Break();
                 return true;
             }
         }
