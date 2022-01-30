@@ -1251,16 +1251,6 @@ PrefabInstance:
       propertyPath: m_UIInputModule
       value: 
       objectReference: {fileID: 1450205171}
-    - target: {fileID: 2278418828287915263, guid: 90f2840f97c05e44288ea5f7eb067539,
-        type: 3}
-      propertyPath: healthEventReceivers.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2278418828287915263, guid: 90f2840f97c05e44288ea5f7eb067539,
-        type: 3}
-      propertyPath: healthEventReceivers.Array.data[1]
-      value: 
-      objectReference: {fileID: 1410827642}
     - target: {fileID: 2278418828485014374, guid: 90f2840f97c05e44288ea5f7eb067539,
         type: 3}
       propertyPath: m_Layer
