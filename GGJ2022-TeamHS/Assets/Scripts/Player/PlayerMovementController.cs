@@ -9,8 +9,6 @@ public class PlayerMovementController : MonoBehaviour
 {
     public float playerSpeed = 0.005f;
     public Camera trackingCamera;
-    public CinemachineVirtualCamera followCam;
-    public CinemachineVirtualCamera mapCam;
 
     private Vector3 movementPlaneScalar = new Vector3(1, 0, 1); //Up is the Y Axis. Camera moves along the X,Z plane
     public Vector2 inputVector {private set;  get;} = Vector2.zero;
@@ -20,12 +18,6 @@ public class PlayerMovementController : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
-        GetComponent<PlayerInput>().actions["ToggleCamera"].performed += ToggleCamera;
-    }
-
-    private void ToggleCamera(InputAction.CallbackContext obj)
-    {
-        followCam.enabled = !followCam.enabled;
     }
 
     public void OnMove(InputValue input)
@@ -44,4 +36,9 @@ public class PlayerMovementController : MonoBehaviour
         var newRotation = Quaternion.Euler(0, trackingCamera.transform.eulerAngles.y, 0);
         body.transform.rotation = Quaternion.Lerp(body.transform.rotation, newRotation, Time.deltaTime * 3);
     }
+
+    //public void OnCollisionEnter(Collision collision)
+    //{
+    //    Debug.Log(collision.gameObject.name);
+    //}
 }

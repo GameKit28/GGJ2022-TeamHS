@@ -25,17 +25,4 @@ public class ParticleButtons : Button
         particles.gameObject.SetActive(false);
         targetGraphic.enabled = false;
     }
-
-    //void Update()
-    //{
-    //    if (particles == null || !Application.isPlaying) return;
-    //    if (IsHighlighted() && particles.isStopped)
-    //    {
-    //        particles.Play();
-    //    }
-    //    else if(particles.isPlaying)
-    //    {
-    //        particles.Stop();
-    //    }
-    //}
 }
