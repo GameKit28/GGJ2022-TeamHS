@@ -8,8 +8,18 @@ public partial class PlayerStateController : MeFsm
     public class DyingState : MeFsmState<PlayerStateController>
     {
         private float timer;
+        private Animator anim;
+
         protected override void EnterState()
         {
+            if (anim == null) {
+                anim = GetComponent<Animator>();
+                if (anim == null) {
+                    return;
+                }
+            }
+            anim.SetTrigger("kill");
+
             GetComponent<PlayerMovementController>().enabled = false;
             GetComponent<PlayerHealthController>().SetImmortal(true);
             timer = 2f;
