@@ -97,7 +97,7 @@ public class Enemy : MonoBehaviour
             }
             yield return new WaitForSeconds(waitTimeBeforeMoving);
 
-            if (waypointIndex + 1 < enemyWaypoints.Length || (reversing && waypointIndex - 1 >= 0))
+            if ((!reversing && waypointIndex + 1 < enemyWaypoints.Length) || (reversing && waypointIndex - 1 >= 0))
             {
                 waypointIndex = reversing ? waypointIndex - 1 : waypointIndex + 1;
                 agent.SetDestination(enemyWaypoints[waypointIndex].position);
