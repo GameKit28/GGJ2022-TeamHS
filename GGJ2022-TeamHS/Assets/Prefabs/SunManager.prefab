@@ -112,6 +112,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9211760821695871249, guid: 794c7b37243e73b499dca86cc817fcff,
+        type: 3}
+      propertyPath: m_ColorTemperature
+      value: 9181
+      objectReference: {fileID: 0}
     - target: {fileID: 9211760821695871470, guid: 794c7b37243e73b499dca86cc817fcff,
         type: 3}
       propertyPath: m_Name
@@ -126,3 +131,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8463830197003946308}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &766508114977484970 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9211760821695871470, guid: 794c7b37243e73b499dca86cc817fcff,
+    type: 3}
+  m_PrefabInstance: {fileID: 8463830197003946308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4578941658582159307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766508114977484970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 2675699fd1092d440a2686fd2eb869b6, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5642091288488012741}
+          m_TargetAssemblyTypeName: Sun, Assembly-CSharp
+          m_MethodName: ChangeSunTemp
+          m_Mode: 4
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1000
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &5642091288488012741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4267491165252772481, guid: 794c7b37243e73b499dca86cc817fcff,
+    type: 3}
+  m_PrefabInstance: {fileID: 8463830197003946308}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766508114977484970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a51c0220336118647bf3eb7e032e9a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
