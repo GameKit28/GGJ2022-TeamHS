@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
+    - target: {fileID: 2278418828287915251, guid: 90f2840f97c05e44288ea5f7eb067539,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2278418828287915260, guid: 90f2840f97c05e44288ea5f7eb067539,
         type: 3}
       propertyPath: trackingCamera
