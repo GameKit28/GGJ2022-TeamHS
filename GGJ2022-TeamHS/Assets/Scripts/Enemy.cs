@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public GameObject idleEnemy;
     public GameObject huntingEnemy;
 
+    private AudioSource audioSource;
 
     public Transform[] enemyWaypoints;
     public bool reverseBackThroughOrder = false;
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         idleEnemy.SetActive(true);
         huntingEnemy.SetActive(false);
         agent = GetComponent<NavMeshAgent>();
@@ -60,6 +62,9 @@ public class Enemy : MonoBehaviour
             huntingEnemy.SetActive(true);
             StopAllCoroutines();
             agent.SetDestination(player.position);
+
+            SetAudioPitch();
+            audioSource.Play();
         }
 
         if(player != null)
@@ -70,6 +75,11 @@ public class Enemy : MonoBehaviour
             //TODO kill player
             Debug.Log("NEAR PLAYER");
         }
+    }
+
+    private void SetAudioPitch() {
+        float rPitch = Random.Range(0.8f, 1.35f);
+        audioSource.pitch = rPitch;
     }
 
     private IEnumerator EnemyMoveCycle()
