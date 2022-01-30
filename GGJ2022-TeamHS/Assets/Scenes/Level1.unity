@@ -616,11 +616,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: SunManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5642091288488012741, guid: 22f0657a7ce42ff4ca074aca197a8339,
-        type: 3}
-      propertyPath: rotationRate
-      value: -15
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f0657a7ce42ff4ca074aca197a8339, type: 3}
 --- !u!1 &626363592
