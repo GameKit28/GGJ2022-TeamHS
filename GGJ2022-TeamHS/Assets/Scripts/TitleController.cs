@@ -38,6 +38,8 @@ public class TitleController : MonoBehaviour
         playButton.onClick.AddListener(OnPlayClicked);
         optionsButton.onClick.AddListener(OnOptionsClicked);
         quitButton.onClick.AddListener(OnQuitClicked);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
     }
 
     void OnPlayClicked()

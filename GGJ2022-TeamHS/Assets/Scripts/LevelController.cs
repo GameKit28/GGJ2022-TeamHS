@@ -29,6 +29,11 @@ public class LevelController : MonoBehaviour
         startText.text = $"Press {displayString} to Start!";
     }
 
+    private void OnDestroy()
+    {
+        toggleAction.performed -= ToggleCamera;
+    }
+
     private void ToggleCamera(InputAction.CallbackContext obj)
     {
         if (endOfLevel) 
