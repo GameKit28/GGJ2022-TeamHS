@@ -31,8 +31,8 @@ public partial class PlayerStateController : MeFsm, IHealthEventReceiver
 
         if (JiggleCoroutine != null) {
             StopCoroutine(JiggleCoroutine);
-            JiggleCoroutine = StartCoroutine(Jiggle());
         }
+        JiggleCoroutine = StartCoroutine(Jiggle());
 
     }
 
@@ -55,11 +55,9 @@ public partial class PlayerStateController : MeFsm, IHealthEventReceiver
 
             float intens = Mathf.Clamp(Random.Range(0f, 1f), 0.35f, 1);
             mat.SetFloat("_ColorIntensity", intens);
-            Debug.Log($"intensity is: {intens}");
 
             float width = Mathf.Clamp(Random.Range(3f, 20f), 3f, 20f);
             mat.SetFloat("_OutlineWidth", width);
-            Debug.Log($"width is: {width}");
 
             yield return null;
         }
