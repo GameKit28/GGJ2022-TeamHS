@@ -11,7 +11,7 @@ public partial class PlayerStateController : MeFsm
         protected override void EnterState()
         {
             GetComponent<PlayerMovementController>().enabled = false;
-            GetComponent<PlayerHealthController>().enabled = false;
+            GetComponent<PlayerHealthController>().SetImmortal(true);
             timer = 2f;
         }
 
