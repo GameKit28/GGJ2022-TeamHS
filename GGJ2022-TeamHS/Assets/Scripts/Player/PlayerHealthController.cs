@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 
 public interface IHealthEventReceiver : IEventSystemHandler
@@ -15,36 +16,37 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
 {
     public int allowedPointsInSun = 1;
 
-    [SerializeReference]
-    public List<IHealthEventReceiver> healthEventReceivers = new List<IHealthEventReceiver>();
+    public List<Component> healthEventReceivers = new List<Component>();
+    private List<IHealthEventReceiver> _healthEventReceivers;
 
     private int numberInSun = 0;
 
     void Start()
     {
-        healthEventReceivers = new List<IHealthEventReceiver>(healthEventReceivers);
+        _healthEventReceivers = healthEventReceivers.Select(i => i.GetComponent<IHealthEventReceiver>()).ToList();
     }
 
     void ILightEventReceiver.OnSunlightEnter()
     {
         if(numberInSun == 0)
         {
-            healthEventReceivers.ForEach(i => i.OnPlayerDamageStart());
+            _healthEventReceivers.ForEach(i => i.OnPlayerDamageStart());
         }
         numberInSun++;
 
         if(numberInSun > allowedPointsInSun)
         {
-            healthEventReceivers.ForEach(i => i.PlayerDefeated());
+            _healthEventReceivers.ForEach(i => i.PlayerDefeated());
         }
     }
 
     void ILightEventReceiver.OnSunlightExit()
     {
         numberInSun--;
-        if(numberInSun == 0)
+
+        if (numberInSun == 0)
         {
-            healthEventReceivers.ForEach(i => i.OnPlayerDamageEnd());
+            _healthEventReceivers.ForEach(i => i.OnPlayerDamageEnd());
         }
     }
 }

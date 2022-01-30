@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovementController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerMovementController : MonoBehaviour
     public Camera trackingCamera;
 
     private Vector3 movementPlaneScalar = new Vector3(1, 0, 1); //Up is the Y Axis. Camera moves along the X,Z plane
+    private Vector2 inputVector = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -15,13 +17,14 @@ public class PlayerMovementController : MonoBehaviour
         
     }
 
+    public void OnMove(InputValue input)
+    {
+        inputVector = input.Get<Vector2>();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Vector2 inputVector = new Vector2(
-                Input.GetAxis("Horizontal"),
-                Input.GetAxis("Vertical"));
-
         Vector3 cameraPlanalForward = Vector3.Scale(trackingCamera.transform.forward, movementPlaneScalar).normalized;
         Vector3 cameraPlanalRight = Vector3.Scale(trackingCamera.transform.right, movementPlaneScalar).normalized;
         Vector3 movementVector = (cameraPlanalForward * inputVector.y) + (cameraPlanalRight * inputVector.x);

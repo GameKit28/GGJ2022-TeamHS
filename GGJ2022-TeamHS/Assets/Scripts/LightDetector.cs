@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public interface ILightEventReceiver : IEventSystemHandler
 {
@@ -15,8 +16,13 @@ public class LightDetector : MonoBehaviour
     private const int detectionInterval = 10;
     private bool isInSunlight = false;
 
-    [SerializeField]
-    public List<ILightEventReceiver> lightEventReceivers = new List<ILightEventReceiver>();
+    public List<Component> lightEventReceivers = new List<Component>();
+    private List<ILightEventReceiver> _lightEventReceivers;
+
+    private void Start()
+    {
+        _lightEventReceivers = lightEventReceivers.Select(i => i.GetComponent<ILightEventReceiver>()).ToList();
+    }
 
     // Update is called once per frame
     void Update()
@@ -28,11 +34,11 @@ public class LightDetector : MonoBehaviour
             {
                 if (newSunlightValue)
                 {
-                    lightEventReceivers.ForEach(i => i.OnSunlightEnter());
+                    _lightEventReceivers.ForEach(i => i.OnSunlightEnter());
                 }
                 else
                 {
-                    lightEventReceivers.ForEach(i => i.OnSunlightExit());
+                    _lightEventReceivers.ForEach(i => i.OnSunlightExit());
                 }
             }
             isInSunlight = newSunlightValue;
