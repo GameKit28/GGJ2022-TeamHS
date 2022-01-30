@@ -65,7 +65,7 @@ Shader "Duality/DualColorOutline" {
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 o.worldNormal = UnpackNormal(tex2Dlod(_BumpMap, float4(v.uv, 1, 0))); //takes object normal and converts it to world space
-                o.worldNormal -= float3(0, 0, 1);
+                o.worldNormal -= float3(0, 0, 0.5);
                 o.worldNormal = o.worldNormal + (UnityObjectToWorldNormal(v.normal));
                 return o;
             }
