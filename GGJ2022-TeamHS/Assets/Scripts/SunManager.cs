@@ -39,7 +39,6 @@ public class SunManager : MonoBehaviour
             else
             {
                 Debug.DrawRay(ray.origin, ray.direction * raycast_len, Color.red, 0.2f);
-                Debug.Break();
                 return true;
             }
         }
