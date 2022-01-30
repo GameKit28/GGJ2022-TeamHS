@@ -399,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167966321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.43, y: 0, z: 28.01}
+  m_LocalPosition: {x: 35.19, y: 0, z: 25.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -593,7 +593,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228278418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.029999, y: 0, z: 36.010002}
+  m_LocalPosition: {x: 18.23, y: 0, z: 28.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1952,6 +1952,11 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1410827642}
+    - target: {fileID: 8808604096470400087, guid: 50bfebdc278c66248b9bc0a0b48b31c7,
+        type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 0.7070015
+      objectReference: {fileID: 0}
     - target: {fileID: 8808604096470400088, guid: 50bfebdc278c66248b9bc0a0b48b31c7,
         type: 3}
       propertyPath: m_RootOrder
@@ -3192,6 +3197,11 @@ PrefabInstance:
       propertyPath: m_LookAt
       value: 
       objectReference: {fileID: 1055664585}
+    - target: {fileID: 6356158519489531150, guid: 04d0ad870d7d8384fb0fd8b5c4fab410,
+        type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 0.7070015
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04d0ad870d7d8384fb0fd8b5c4fab410, type: 3}
 --- !u!114 &843394076 stripped
@@ -4824,6 +4834,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1346721075948381971, guid: 9dbc22a30eea9b04b9d011360acebc66,
+        type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 1410827642}
     - target: {fileID: 1676819200702479582, guid: 9dbc22a30eea9b04b9d011360acebc66,
         type: 3}
       propertyPath: m_Name
@@ -5621,6 +5636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AngryEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5207881885792912826, guid: b603e6f65a2b2fa4080afa6a4e9bd324,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5207881885792912827, guid: b603e6f65a2b2fa4080afa6a4e9bd324,
         type: 3}
       propertyPath: m_Name
@@ -5777,7 +5797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766728967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.67, y: 0, z: 20.43}
+  m_LocalPosition: {x: 18.31, y: 0, z: 14.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6239,7 +6259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877807113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.39, y: 0, z: 17.68}
+  m_LocalPosition: {x: 25.89, y: 0, z: 12.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

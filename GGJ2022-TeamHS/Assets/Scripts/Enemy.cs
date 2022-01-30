@@ -107,7 +107,7 @@ public class Enemy : MonoBehaviour
             if (reverseBackThroughOrder)
             {
                 reversing = !reversing;
-                continue;
+                waypointIndex = reversing ? waypointIndex - 1 : waypointIndex + 1;
             }
             else
             {

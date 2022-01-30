@@ -67,8 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b8f177a0ed7124393995753259f26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allowedPointsInSun: 2
-  secondsAllowedInSun: 0.666
+  allowedPointsInSun: 3
+  secondsAllowedInSun: 0.7
   healthEventReceivers:
   - {fileID: 1079150952085107194}
   - {fileID: 2278418828287915261}
@@ -78,6 +78,7 @@ MonoBehaviour:
   - {fileID: 489790187568163086}
   - {fileID: 7336276549389734785}
   - {fileID: 6246335472942519568}
+  immortal: 0
 --- !u!114 &2278418828287915262
 MonoBehaviour:
   m_ObjectHideFlags: 0

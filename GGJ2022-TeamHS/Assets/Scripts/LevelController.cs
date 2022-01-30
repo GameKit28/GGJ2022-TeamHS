@@ -14,6 +14,7 @@ public class LevelController : MonoBehaviour
 
     public CinemachineVirtualCamera followCam;
     public CinemachineVirtualCamera mapCam;
+    public CinemachineVirtualCamera endLevelCam;
     public TMPro.TMP_Text startText;
     public int nextLevelIndex;
 
@@ -60,13 +61,18 @@ public class LevelController : MonoBehaviour
         if(other.tag == "Player")
         {
             //TODO win logic here
+            endLevelCam.enabled = true;
+            followCam.enabled = false;
+            mapCam.enabled = false;
             endOfLevel = true;
             mapCam.enabled = true;
             startText.text = $"Ya win bitch!";
             DOTween.Sequence()
                 .Append(startText.DOColor(Color.white, 1.5f))
                 .Append(startText.rectTransform.DOPunchScale(Vector3.one * 2, 3))
-                .OnComplete(() => startText.text = $"Press {toggleAction.GetBindingDisplayString()} to Continue!");
+                .Join(player.transform.DOSpiral(5, speed: 5))
+                .Join(player.transform.DOMoveY(100, 5)
+                .OnComplete(() => startText.text = $"Press {toggleAction.GetBindingDisplayString()} to Continue!"));
         }
     }
 }
