@@ -9,6 +9,7 @@ Shader "Duality/DualColorOutline" {
         [MainBump]
         _BumpMap("Normal Map", 2D) = "bump" {}
 
+        _Brightness("Brightness", Range(0,1)) = 0.3
         _CelCutoff("Max Distance", Float) = 5.0
         _OutlineThreshold("Outline Threshole", Range(0.01,0.99)) = 0.5
         _OutlineWidth("Outline Width", Range(0, 20)) = 2.0
@@ -50,6 +51,7 @@ Shader "Duality/DualColorOutline" {
             sampler2D _MainTex;
             sampler2D _BumpMap;
             float4 _MainTex_ST;
+            float _Brightness;
 
 
             float CellShade(float3 normal, float3 lightDir)
@@ -74,7 +76,7 @@ Shader "Duality/DualColorOutline" {
             {
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
-                col *= CellShade(i.worldNormal, _WorldSpaceLightPos0.xyz); //takes the color of our texture and multiplies it by the function i made earlier
+                col *= CellShade(i.worldNormal, _WorldSpaceLightPos0.xyz)+_Brightness; //takes the color of our texture and multiplies it by the function i made earlier
                 return col;
             }
             ENDCG
