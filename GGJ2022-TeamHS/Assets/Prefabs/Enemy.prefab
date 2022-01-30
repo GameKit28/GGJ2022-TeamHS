@@ -236,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 6357473006049320928, guid: 150c11892add09949a9657773ab0cf0c,
         type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: AngryEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 6357473006049320928, guid: 150c11892add09949a9657773ab0cf0c,
         type: 3}
