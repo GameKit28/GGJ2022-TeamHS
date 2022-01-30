@@ -76,9 +76,10 @@ Shader "Duality/DualColorOutline" {
             {
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
-                col = lerp(col,(col * _Color),_ColorIntensity);
-                col *= CellShade(i.worldNormal, _WorldSpaceLightPos0.xyz)+_Brightness; //takes the color of our texture and multiplies it by the function i made earlier
-                return col;
+                float4 pain = col * _Color + float4(0.2f, 0.2f, 0.2f, 0.2f);
+                float4 surface = lerp(col,pain,_ColorIntensity);
+                surface *= CellShade(i.worldNormal, _WorldSpaceLightPos0.xyz)+_Brightness; //takes the color of our texture and multiplies it by the function i made earlier
+                return surface;
             }
             ENDCG
         }
