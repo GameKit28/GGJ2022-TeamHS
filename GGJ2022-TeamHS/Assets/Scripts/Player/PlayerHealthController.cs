@@ -25,6 +25,7 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
 
     private bool immortal = false;
 
+
     void Start()
     {
         _healthEventReceivers = healthEventReceivers.Select(i => i.GetComponent<IHealthEventReceiver>()).ToList();
