@@ -15,7 +15,6 @@ public partial class PlayerStateController : MeFsm, IHealthEventReceiver
     protected override void Start()
     {
         mat = GetComponentInChildren<SkinnedMeshRenderer>().material;
-        JiggleCoroutine = StartCoroutine(Jiggle());
 
     }
 
