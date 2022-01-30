@@ -14,12 +14,12 @@ public class HealthAudio : MonoBehaviour, IHealthEventReceiver
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.volume = 0f;
+        //audioSource.volume = 0f;
     }
 
     void IHealthEventReceiver.OnPlayerDamageEnd()
     {
-        audioSource.volume = 0f;
+        if(audioSource.clip == burningSound) audioSource.volume = 0;
     }
 
     void IHealthEventReceiver.OnPlayerDamageStart()
@@ -35,6 +35,6 @@ public class HealthAudio : MonoBehaviour, IHealthEventReceiver
         audioSource.clip = deathSound;
         audioSource.loop = false;
         audioSource.volume = 1f;
-        audioSource.Play();
+        audioSource.PlayOneShot(deathSound);
     }
 }

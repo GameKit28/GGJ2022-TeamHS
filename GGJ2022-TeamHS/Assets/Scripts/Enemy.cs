@@ -68,13 +68,16 @@ public class Enemy : MonoBehaviour
                 audioSource.Play();
         }
 
-        if(player != null)
+        if (player != null)
+        {
             Debug.Log("SEES PLAYER");
 
-        if (detect.IsNearPlayer())
-        {
-            //TODO kill player
-            Debug.Log("NEAR PLAYER");
+            if (detect.IsNearPlayer())
+            {
+                Debug.Log("NEAR PLAYER");
+                var playerHealth = player.GetComponent<PlayerHealthController>();
+                playerHealth.KillPlayer();
+            }
         }
     }
 
