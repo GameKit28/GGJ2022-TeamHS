@@ -70,7 +70,7 @@
                     "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "ScaleVector2(x=10,y=10)",
                     "groups": ";Gamepad",
                     "action": "Look",
                     "isComposite": false,
@@ -237,6 +237,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
+                    "action": "ToggleCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ce924c4-c559-4496-9659-0dbc8018ba99",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
                     "action": "ToggleCamera",
                     "isComposite": false,
                     "isPartOfComposite": false
