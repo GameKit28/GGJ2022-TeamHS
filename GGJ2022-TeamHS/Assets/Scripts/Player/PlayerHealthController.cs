@@ -21,6 +21,8 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
 
     private int numberInSun = 0;
 
+    private bool immortal = false;
+
     void Start()
     {
         _healthEventReceivers = healthEventReceivers.Select(i => i.GetComponent<IHealthEventReceiver>()).ToList();
@@ -28,13 +30,13 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
 
     void ILightEventReceiver.OnSunlightEnter()
     {
-        if(numberInSun == 0)
+        if(numberInSun == 0 && !immortal)
         {
             _healthEventReceivers.ForEach(i => i.OnPlayerDamageStart());
         }
         numberInSun++;
 
-        if(numberInSun > allowedPointsInSun)
+        if(numberInSun > allowedPointsInSun && !immortal)
         {
             _healthEventReceivers.ForEach(i => i.PlayerDefeated());
         }
@@ -47,6 +49,15 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
         if (numberInSun == 0)
         {
             _healthEventReceivers.ForEach(i => i.OnPlayerDamageEnd());
+        }
+    }
+
+    public void SetImmortal(bool immortal)
+    {
+        this.immortal = immortal;
+        if(immortal == false && numberInSun > allowedPointsInSun)
+        {
+            _healthEventReceivers.ForEach(i => i.PlayerDefeated());
         }
     }
 }

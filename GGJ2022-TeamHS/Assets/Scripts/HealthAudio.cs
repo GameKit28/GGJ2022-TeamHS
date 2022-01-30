@@ -25,6 +25,6 @@ public class HealthAudio : MonoBehaviour, IHealthEventReceiver
 
     void IHealthEventReceiver.PlayerDefeated()
     {
-        //Do nothing
+        //do nothing
     }
 }
