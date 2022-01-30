@@ -19,6 +19,7 @@ public class LevelController : MonoBehaviour
     public GameObject winStatePanel;
     public TMPro.TMP_Text bestTimeText;
     public int nextLevelIndex;
+    public GameObject fireworks;
 
     private bool levelStarted = false;
     private bool endOfLevel = false;
@@ -79,6 +80,7 @@ public class LevelController : MonoBehaviour
             mapCam.enabled = false;
             endOfLevel = true;
             mapCam.enabled = true;
+            fireworks.SetActive(true);
             startText.text = $"Press {toggleAction.GetBindingDisplayString()} to Continue!";
             bestTimeText.text = $"{Mathf.RoundToInt(levelCompletionTime)} Seconds";
             winStatePanel.SetActive(true);
