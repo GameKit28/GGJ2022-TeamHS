@@ -1,4 +1,4 @@
-Shader "Unlit/FrankiesIncompitent_CellShader"
+Shader "Duality/DualCellShade"
 {
     Properties
     {
