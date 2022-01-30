@@ -163,6 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1707c8a53a48e042a2559cfe96ebbe0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  footstepSounds:
+  - {fileID: 8300000, guid: e5d8658d914e9c94584798264af1142b, type: 3}
+  - {fileID: 8300000, guid: ade8960f64fc62842aa7f39576c943f2, type: 3}
+  - {fileID: 8300000, guid: 62d716a399530af4c85bf0af02970ec1, type: 3}
 --- !u!1 &3435779304655506912
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,7 +210,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 403250d8e64ed0a4899e79ab273743e3, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -304,6 +308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebdda005b4642a4397978ab443b8581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  burningSound: {fileID: 8300000, guid: 014eb11cd01b8e84585faca63e3d4768, type: 3}
+  deathSound: {fileID: 8300000, guid: e0692f184eb3d234dab4778c1b63399d, type: 3}
 --- !u!1001 &2278418827432683447
 PrefabInstance:
   m_ObjectHideFlags: 0
