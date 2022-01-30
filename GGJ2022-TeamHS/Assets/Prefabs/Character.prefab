@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2278418828287915262}
   - component: {fileID: 1495143566087618780}
   - component: {fileID: 3737169570213928383}
+  - component: {fileID: 4046941546734037108}
+  - component: {fileID: 6325720293133043261}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -132,6 +134,38 @@ MonoBehaviour:
   StartingState:
     _typeRef: PlayerStateController+SpawningState, Assembly-CSharp
   respawnPoint: {fileID: 0}
+--- !u!95 &4046941546734037108
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2278418828287915251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b219783009d57c641b6d8f1cea363343, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6325720293133043261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2278418828287915251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1707c8a53a48e042a2559cfe96ebbe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3435779304655506912
 GameObject:
   m_ObjectHideFlags: 0
