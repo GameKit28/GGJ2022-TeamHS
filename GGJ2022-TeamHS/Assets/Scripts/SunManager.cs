@@ -35,7 +35,7 @@ public class SunManager : MonoBehaviour
             }
             else
             {
-                Debug.DrawRay(ray.origin, ray.direction, Color.yellow);
+                Debug.DrawRay(ray.origin, ray.direction, Color.red);
                 return true;
             }
         }
@@ -59,7 +59,7 @@ public class SunManager : MonoBehaviour
             }
             else
             {
-                Debug.DrawRay(ray.origin, ray.direction, Color.yellow);
+                Debug.DrawRay(ray.origin, ray.direction, Color.red);
                 visibleSuns.Add(sun);
             }
         }
