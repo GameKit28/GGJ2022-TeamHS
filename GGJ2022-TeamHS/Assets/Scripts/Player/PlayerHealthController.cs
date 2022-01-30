@@ -15,11 +15,13 @@ public interface IHealthEventReceiver : IEventSystemHandler
 public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
 {
     public int allowedPointsInSun = 1;
+    public float secondsAllowedInSun = 1;
 
     public List<Component> healthEventReceivers = new List<Component>();
     private List<IHealthEventReceiver> _healthEventReceivers;
 
     private int numberInSun = 0;
+    private float timeInSun = 0;
 
     private bool immortal = false;
 
@@ -36,10 +38,10 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
         }
         numberInSun++;
 
-        if(numberInSun > allowedPointsInSun && !immortal)
-        {
-            _healthEventReceivers.ForEach(i => i.PlayerDefeated());
-        }
+        //if(numberInSun > allowedPointsInSun && !immortal)
+        //{
+        //    _healthEventReceivers.ForEach(i => i.PlayerDefeated());
+        //}
     }
 
     void ILightEventReceiver.OnSunlightExit()
@@ -58,6 +60,23 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
         if(immortal == false && numberInSun > allowedPointsInSun)
         {
             _healthEventReceivers.ForEach(i => i.PlayerDefeated());
+        }
+    }
+
+    public void Update()
+    {
+        if(numberInSun > allowedPointsInSun)
+        {
+            timeInSun += Time.deltaTime;
+            if(timeInSun > secondsAllowedInSun)
+            {
+                _healthEventReceivers.ForEach(i => i.PlayerDefeated());
+                timeInSun = 0;
+            }
+        }
+        else
+        {
+            timeInSun = 0;
         }
     }
 }

@@ -64,7 +64,8 @@ public class Enemy : MonoBehaviour
             agent.SetDestination(player.position);
 
             SetAudioPitch();
-            audioSource.Play();
+            if(!audioSource.isPlaying)
+                audioSource.Play();
         }
 
         if(player != null)

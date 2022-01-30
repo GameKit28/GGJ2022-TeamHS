@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3737169570213928383}
   - component: {fileID: 4046941546734037108}
   - component: {fileID: 6325720293133043261}
-  - component: {fileID: 1070216261191047555}
+  - component: {fileID: 4636600083711789396}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowedPointsInSun: 2
+  secondsAllowedInSun: 0.666
   healthEventReceivers:
   - {fileID: 1079150952085107194}
 --- !u!114 &2278418828287915262
@@ -168,7 +169,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e5d8658d914e9c94584798264af1142b, type: 3}
   - {fileID: 8300000, guid: ade8960f64fc62842aa7f39576c943f2, type: 3}
   - {fileID: 8300000, guid: 62d716a399530af4c85bf0af02970ec1, type: 3}
---- !u!82 &1070216261191047555
+--- !u!82 &4636600083711789396
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,14 +180,14 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_PlayOnAwake: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 100
+  Priority: 128
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -224,7 +225,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.75
       inSlope: 0
       outSlope: 0
       tangentMode: 0
