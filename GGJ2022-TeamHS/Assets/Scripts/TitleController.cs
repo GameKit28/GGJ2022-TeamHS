@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class TitleController : MonoBehaviour
 {
     [Header("Button Config")]
-    public Button playButton;
-    public Button quitButton;
-    public Button optionsButton;
+    public ParticleButtons playButton;
+    public ParticleButtons quitButton;
+    public ParticleButtons optionsButton;
     [Space]
     [Header("Panel Config")]
     public GameObject mainButtonsPanel;
     public GameObject optionsPanel;
     public GameObject levelButtonsPanel;
+    public Image fade;
     [Space]
     [Header("Popup Config")]
     public GameObject popup;
@@ -31,7 +35,6 @@ public class TitleController : MonoBehaviour
     //TODO One assumption I'm going to make is that hitting B or ESC on the main menu will bring you back to the main buttons panel -cb
     void Start()
     {
-
         playButton.onClick.AddListener(OnPlayClicked);
         optionsButton.onClick.AddListener(OnOptionsClicked);
         quitButton.onClick.AddListener(OnQuitClicked);
@@ -39,9 +42,12 @@ public class TitleController : MonoBehaviour
 
     void OnPlayClicked()
     {
-
-        mainButtonsPanel.SetActive(false);
-        levelButtonsPanel.SetActive(true);
+        fade.DOColor(Color.black, 2.5f).OnComplete(() =>
+        {
+            SceneManager.LoadScene(1);
+        });
+        //mainButtonsPanel.SetActive(false);
+        //levelButtonsPanel.SetActive(true);
     }
 
     void OnOptionsClicked()
@@ -67,8 +73,9 @@ public class TitleController : MonoBehaviour
         popupText.text = bodyText;
         popupButtonsPanel.enabled = false;
 
-        foreach (var button in buttons)
+        for (int i = 0; i < buttons.Length; i++)
         {
+            PopupButton button = buttons[i];
             var buttonInstance = Instantiate(popupButtonPrefab, popupButtonsPanel.transform);
             buttonInstance.GetComponentInChildren<TMPro.TMP_Text>().text = button.text;
             buttonInstance.onClick.AddListener(() =>
@@ -76,6 +83,10 @@ public class TitleController : MonoBehaviour
                 button.onClickAction?.Invoke();
                 HidePopup();
             });
+            if(i == 0)
+            {
+                EventSystem.current.SetSelectedGameObject(buttonInstance.gameObject);
+            }
         }
 
         popupButtonsPanel.enabled = true;
@@ -89,5 +100,6 @@ public class TitleController : MonoBehaviour
         {
             Destroy(childButtons.gameObject);
         }
+        EventSystem.current.SetSelectedGameObject(quitButton.gameObject);
     }
 }

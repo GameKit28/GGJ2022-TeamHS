@@ -6,6 +6,10 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class Enemy : MonoBehaviour
 {
+    public GameObject idleEnemy;
+    public GameObject huntingEnemy;
+
+
     public Transform[] enemyWaypoints;
     public bool reverseBackThroughOrder = false;
     public float waitTimeBeforeMoving = 1;
@@ -21,6 +25,8 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        idleEnemy.SetActive(true);
+        huntingEnemy.SetActive(false);
         agent = GetComponent<NavMeshAgent>();
         detect = GetComponent<EnemyDetection>();
         if (enemyWaypoints == null || enemyWaypoints.Length < 1 || enemyWaypoints[0] == null)
@@ -40,6 +46,8 @@ public class Enemy : MonoBehaviour
         if (player == null && chasingPlayer) 
         {
             chasingPlayer = false;
+            idleEnemy.SetActive(true);
+            huntingEnemy.SetActive(false);
             Debug.Log("RESETTING MOVEMENT");
             agent.SetDestination(enemyWaypoints[waypointIndex].position);
             StartCoroutine(EnemyMoveCycle());
@@ -48,6 +56,8 @@ public class Enemy : MonoBehaviour
         else if (player != null && !chasingPlayer)
         {
             chasingPlayer = true;
+            idleEnemy.SetActive(false);
+            huntingEnemy.SetActive(true);
             StopAllCoroutines();
             agent.SetDestination(player.position);
         }
