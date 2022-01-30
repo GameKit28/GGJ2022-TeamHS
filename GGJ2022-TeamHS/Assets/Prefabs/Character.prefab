@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2278418828287915260}
   - component: {fileID: 2278418828287915263}
   - component: {fileID: 2278418828287915262}
+  - component: {fileID: 1952787875487717860}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -62,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b8f177a0ed7124393995753259f26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allowedPointsInSun: 1
+  allowedPointsInSun: 2
   healthEventReceivers:
   - {fileID: 1079150952085107194}
 --- !u!114 &2278418828287915262
@@ -96,6 +97,21 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1952787875487717860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2278418828287915251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83281ec5fae901c4a805a68978b2b431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartingState:
+    _typeRef: PlayerStateController+SpawningState, Assembly-CSharp
+  respawnLocation: {fileID: 0}
 --- !u!1 &3435779304655506912
 GameObject:
   m_ObjectHideFlags: 0
