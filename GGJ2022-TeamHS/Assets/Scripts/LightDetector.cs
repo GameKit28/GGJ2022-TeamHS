@@ -13,6 +13,7 @@ public interface ILightEventReceiver : IEventSystemHandler
 [System.Serializable]
 public class LightDetector : MonoBehaviour
 {
+
     private const int detectionInterval = 10;
     private bool isInSunlight = false;
 
