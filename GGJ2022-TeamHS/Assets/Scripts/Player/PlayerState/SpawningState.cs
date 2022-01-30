@@ -15,7 +15,8 @@ public partial class PlayerStateController : MeFsm
             GetComponent<PlayerMovementController>().enabled = true;
             GetComponent<PlayerHealthController>().enabled = false;
 
-            this.transform.position = ParentFsm.respawnLocation.position;
+            this.transform.position = ParentFsm.respawnPoint.transform.position;
+            ParentFsm.respawnPoint.PlayRespawn();
         }
 
         private void Update()
