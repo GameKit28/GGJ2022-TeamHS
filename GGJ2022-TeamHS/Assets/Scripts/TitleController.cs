@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class TitleController : MonoBehaviour
 {
     [Header("Button Config")]
-    public Button playButton;
-    public Button quitButton;
-    public Button optionsButton;
+    public ParticleButtons playButton;
+    public ParticleButtons quitButton;
+    public ParticleButtons optionsButton;
     [Space]
     [Header("Panel Config")]
     public GameObject mainButtonsPanel;
@@ -31,7 +31,6 @@ public class TitleController : MonoBehaviour
     //TODO One assumption I'm going to make is that hitting B or ESC on the main menu will bring you back to the main buttons panel -cb
     void Start()
     {
-
         playButton.onClick.AddListener(OnPlayClicked);
         optionsButton.onClick.AddListener(OnOptionsClicked);
         quitButton.onClick.AddListener(OnQuitClicked);
