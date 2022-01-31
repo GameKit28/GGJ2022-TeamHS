@@ -61,7 +61,7 @@ public partial class PlayerStateController : MeFsm, IHealthEventReceiver
 
             yield return null;
         }
-        mat.SetFloat("_Brightness", 0.3f);
+        mat.SetFloat("_Brightness", 0f);
         mat.SetFloat("_ColorIntensity", 0f);
         mat.SetFloat("_OutlineWidth", 4.7f);
         StopThis();
