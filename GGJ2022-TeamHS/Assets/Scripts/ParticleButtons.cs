@@ -16,13 +16,13 @@ public class ParticleButtons : Button
     {
         if (particles == null) return;
         particles.gameObject.SetActive(true);
-        targetGraphic.enabled = true;
+        targetGraphic.gameObject.SetActive(true);
     }
 
     public void Normal()
     {
         if (particles == null) return;
         particles.gameObject.SetActive(false);
-        targetGraphic.enabled = false;
+        targetGraphic.gameObject.SetActive(false);
     }
 }

@@ -26,6 +26,10 @@ public class TitleController : MonoBehaviour
     public LayoutGroup popupButtonsPanel;
     public Button popupButtonPrefab;
 
+    private bool loading = false;
+    public AudioSource uiSounds;
+    public AudioClip confirm;
+
     private struct PopupButton
     {
         public string text;
@@ -44,10 +48,13 @@ public class TitleController : MonoBehaviour
 
     void OnPlayClicked()
     {
+        if (loading) return;
+        loading = true;
         fade.DOColor(Color.black, 2.5f).OnComplete(() =>
         {
             SceneManager.LoadScene(1);
         });
+        uiSounds.PlayOneShot(confirm);
         //mainButtonsPanel.SetActive(false);
         //levelButtonsPanel.SetActive(true);
     }

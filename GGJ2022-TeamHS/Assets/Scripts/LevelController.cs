@@ -24,6 +24,7 @@ public class LevelController : MonoBehaviour
     private bool levelStarted = false;
     private bool endOfLevel = false;
     private InputAction toggleAction;
+    public AudioSource startSound;
 
     private float levelCompletionTime;
 
@@ -51,6 +52,7 @@ public class LevelController : MonoBehaviour
 
         if (!levelStarted) 
         {
+            startSound.Play();
             startText.DOColor(Color.clear, 1.5f).OnComplete(() =>
             {
                 foreach(var enemy in enemies)
@@ -75,7 +77,7 @@ public class LevelController : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            //TODO win logic here
+            other?.GetComponent<PlayerHealthController>().SetImmortal(true);
             endLevelCam.enabled = true;
             followCam.enabled = false;
             mapCam.enabled = false;
@@ -86,10 +88,10 @@ public class LevelController : MonoBehaviour
             bestTimeText.text = $"{Mathf.RoundToInt(levelCompletionTime)} Seconds";
             winStatePanel.SetActive(true);
             DOTween.Sequence()
+                .Append(startText.DOColor(Color.white, 1f))
                 .Append(startText.rectTransform.DOShakePosition(1.5f, randomness: 30, strength: 0.5f, vibrato: 5))
-                .Join(player.transform.DOSpiral(5, speed: 5))
-                .Join(player.transform.DOMoveY(100, 5))
-                .Append(startText.DOColor(Color.white, 1.5f));
+                //.Join(player.transform.DOSpiral(10, speed: 50));
+                .Join(player.transform.DOMoveY(1000, 100));
         }
     }
 }
