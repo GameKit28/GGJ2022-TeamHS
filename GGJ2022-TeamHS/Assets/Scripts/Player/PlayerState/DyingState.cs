@@ -18,13 +18,19 @@ public partial class PlayerStateController : MeFsm
                     return;
                 }
             }
-            anim.SetTrigger("kill");
+            anim.SetBool("isDead", true);
 
             GetComponent<PlayerMovementController>().enabled = false;
             GetComponent<PlayerHealthController>().SetImmortal(true);
             timer = 2f;
         }
 
+        protected override void ExitState() {
+            base.ExitState();
+
+            anim.SetBool("isDead", false);
+
+        }
         private void Update()
         {
             timer -= Time.deltaTime;
