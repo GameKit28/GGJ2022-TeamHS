@@ -4221,6 +4221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6910301297307414516, guid: aadf57400a19d21429fc9d27611f6f86,
         type: 3}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 7365732562728887499}
+    - target: {fileID: 6910301297307414516, guid: aadf57400a19d21429fc9d27611f6f86,
+        type: 3}
       propertyPath: mapCam
       value: 
       objectReference: {fileID: 1521899890}
@@ -7535,6 +7540,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 477a1d24609094c4098ec202734cbb7a, type: 3}
+--- !u!114 &7365732562728887499 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6145917948337588882, guid: 477a1d24609094c4098ec202734cbb7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7365732562728887498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7365732562728887500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5221931430503107104, guid: 477a1d24609094c4098ec202734cbb7a,

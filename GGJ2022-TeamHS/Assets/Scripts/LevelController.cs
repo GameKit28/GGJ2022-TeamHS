@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using DG.Tweening;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelController : MonoBehaviour
 {
@@ -20,22 +21,33 @@ public class LevelController : MonoBehaviour
     public TMPro.TMP_Text bestTimeText;
     public int nextLevelIndex;
     public GameObject fireworks;
+    public float fadeInDuration = 1.5f;
 
     private bool levelStarted = false;
     private bool endOfLevel = false;
     private InputAction toggleAction;
     public AudioSource startSound;
+    public Image fade;
 
     private float levelCompletionTime;
 
     public void Start()
     {
-        levelCompletionTime = 0;
-        var input = player.GetComponent<PlayerInput>();
-        toggleAction = input.actions["ToggleCamera"];
-        toggleAction.performed += ToggleCamera;
-        var displayString = toggleAction.GetBindingDisplayString();
         startText.text = $"Press Space or Y/Triangle to Start!";
+        //#if !UNITY_EDITOR
+        fade.color = Color.black;
+        fade.gameObject.SetActive(true);
+        fade.DOColor(Color.clear, fadeInDuration).OnComplete(() =>
+        {
+            var input = player.GetComponent<PlayerInput>();
+            toggleAction = input.actions["ToggleCamera"];
+            toggleAction.performed += ToggleCamera;
+        //#endif
+            fade.gameObject.SetActive(false);
+        //#if !UNITY_EDITOR
+        });
+        //#endif
+        levelCompletionTime = 0;
     }
 
     private void OnDestroy()
@@ -47,7 +59,11 @@ public class LevelController : MonoBehaviour
     {
         if (endOfLevel) 
         {
-            SceneManager.LoadScene(nextLevelIndex);
+            fade.gameObject.SetActive(true);
+            fade.DOColor(Color.black, 0.2f).OnComplete(() =>
+            {
+                SceneManager.LoadScene(nextLevelIndex);
+            });
         };
 
         if (!levelStarted) 
@@ -77,7 +93,7 @@ public class LevelController : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            other?.GetComponent<PlayerHealthController>().SetImmortal(true);
+            other.GetComponentInParent<PlayerHealthController>()?.SetImmortal(true);
             endLevelCam.enabled = true;
             followCam.enabled = false;
             mapCam.enabled = false;

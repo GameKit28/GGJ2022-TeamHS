@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowedPointsInSun: 3
-  secondsAllowedInSun: 0.7
+  secondsAllowedInSun: 0.5
   healthEventReceivers:
   - {fileID: 1079150952085107194}
   - {fileID: 2278418828287915261}

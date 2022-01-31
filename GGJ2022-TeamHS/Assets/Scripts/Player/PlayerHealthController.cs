@@ -59,20 +59,16 @@ public class PlayerHealthController : MonoBehaviour, ILightEventReceiver
     public void SetImmortal(bool immortal)
     {
         this.immortal = immortal;
-        if(immortal == false && numberInSun > 0)
+        if(!immortal && numberInSun > allowedPointsInSun)
         {
             _healthEventReceivers.ForEach(i => i.OnPlayerDamageStart());
         }
-
-        if(immortal == false && numberInSun > allowedPointsInSun)
-        {
-            KillPlayer();
-        }
+        timeInSun = 0;
     }
 
     public void Update()
     {
-        if(numberInSun > allowedPointsInSun)
+        if(!immortal && numberInSun > allowedPointsInSun)
         {
             timeInSun += Time.deltaTime;
             if(timeInSun > secondsAllowedInSun)
